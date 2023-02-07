@@ -1,0 +1,141 @@
+/* STYLE for the game */
+
+
+.conteiner {
+  align-items: center;
+  margin-left: 25vh;
+  zoom: 130%;
+  text-align: center;
+  align-content: center;
+  flex: content;
+}
+
+.left {
+  width: 100%;
+  box-align: left;
+  max-width: 800px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+.right {
+  width: 30%;
+  box-align: left;
+  min-width: 200px;
+  margin: 0 auto;
+}
+h1 {
+color: #56c3ea;  
+font-family: courier new;
+}
+.guessField {
+ position: relative;
+ display: inline-block;
+ height: 32px;
+ padding: 8px 14px;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 2px;
+ width: 200px;
+ background: #fff; 
+ border-color: #56c3ea; 
+}
+.guessField:focus {
+outline: none;
+}
+.submitCheck, button {
+  position: relative;
+ display: inline-block;
+ line-height: 32px;
+ padding: 8px 14px;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 2px;
+ color: #fff; 
+ text-transform: uppercase;
+ font-weight: 700; 
+ background: #00f842; 
+ border-color: #56c3ea;   
+}
+.submitCheck:hover, button:hover {
+  filter: brightness(140%);
+  background: #1c2720; 
+  border-color: #4cbb17;
+}
+.submitCheck:hover, button:active{
+  background-color: rgb(7, 129, 31);
+  filter: brightness(100%);
+}
+
+.submitExit, button {
+  position: relative;
+ display: inline-block;
+ line-height: 32px;
+ padding: 8px 14px;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 2px;
+ color: #fff; 
+ text-transform: uppercase;
+ font-weight: 700; 
+ background: #e01d1d; 
+ border-color: #100f0f;   
+}
+.submitExit:hover, button:hover {
+  filter: brightness(140%);
+  background: #6a022f; 
+  border-color: #000000;
+}
+.submitExit:hover, button:active{
+  background-color: rgb(207, 39, 39);
+  filter: brightness(100%);
+}
+#min  {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+#max  {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+#lives {
+  color: #e01d1d;
+  animation: blink_fire 1s 0s ease-in-out alternate infinite;
+}
+@keyframes blink_fire {
+  0% {
+    opacity: 1;
+    color: #00f842;
+  }
+  100% {
+    opacity: 0.7;
+    color: #e01d1d;
+  }
+}
+
+
+
+
+
+.guessSubmit, button {
+position: relative;
+ display: inline-block;
+ line-height: 32px;
+ padding: 8px 14px;
+ border-radius: 6px;
+ border-style: solid;
+ border-width: 2px;
+ color: #fff; 
+ text-transform: uppercase;
+ font-weight: 700; 
+ background: #56c3ea; 
+ border-color: #56c3ea;   
+}
+.guessSubmit:hover, button:hover {
+background: #4cbb17; 
+border-color: #4cbb17;  
+}
+.lastResult {
+  font-weight: 700; 
+  padding: 5px 0;
+}
+.guesses {
+margin: 5px 0;  
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 	<meta charset="UTF-8">
@@ -7,9 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Parallax</title>
-
+	
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<script src="js/script.js" defer></script>
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -17,6 +20,7 @@
 	<script src="js/app.js" defer></script>
 
 </head>
+
 <body>
 
 	<div class="wrapper">
@@ -33,11 +37,29 @@
 					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
 				</div>
 			</header>
-		
+
 			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
-				<div class="main-article__content">
-					<h2 class="main-article__header">To be continued</h2>
-					<p class="main-article__paragraph"></p>
+				<div class="conteiner">
+				<div class="left">
+					<h1>Game "Guess the number"</h1>
+
+					<p>You can chose minimal value <input id="min" required> and maximal <input id="max" required>. You'll can try
+						guess it for <strong>5</strong> attempts.<br>I'll say you cold or warm.<br> If you go out of range the game
+						will be over.</p>
+					<input type="submit" value="CHECK" class="submitCheck"> <input type="submit" value="EXIT" class="submitExit">
+					<p id="live">Your lives: <span id="lives">5</span> ❤️</p>
+					<div class="form">
+						<label for="guessField">Your chose: </label><input type="text" id="guessField" class="guessField">
+						<input type="submit" value="Guess" class="guessSubmit">
+					</div>
+				</div>
+					<div class="resultParas"><br>
+						<p class="guesses"></p>
+						<p class="lastResult"></p>
+						<p class="lowOrHi"></p>
+					</div>
+				</div>
+				<div class="right">
 				</div>
 				<div class="copy">©</div>
 			</article>
@@ -46,4 +68,5 @@
 	</div>
 
 </body>
+
 </html>
